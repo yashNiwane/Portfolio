@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Niwane</title>
+    <link rel="icon" href="Assets/img/YN-black.png" type="image/gif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-c0S5L0MYGfAcqHzJhL8b/j7qRkL2h/5l6KSLtRq5b8V4HfJSx7ztUANGtETiSPSfUiZBkBTq3qotgQ7Vsw5r2pA==" crossorigin="anonymous" />
+
+<script src="https://use.fontawesome.com/20ab91acc4.js">
+
+</script>
+
+<meta name="referrer" content="no-referrer">
+<style>
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+    color: white;
+  }
+
+  .Scontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .Scard {
+    background-color: black;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: white;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .icon {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    margin: 5px;
+  }
+
+  .label {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(249, 246, 238);
+  }
+
+  .languages-label,
+  .frameworks-label,
+  .libraries-label,
+  .other-label {
+    position: absolute;
+  }
+
+  .languages-label {
+    top: 10px;
+    left: 10px;
+  }
+
+  .frameworks-label {
+    top: 10px;
+    right: 10px;
+  }
+
+  .libraries-label {
+    top: 10px;
+    left: 10px;
+  }
+
+  .other-label {
+    top: 10px;
+    right: 10px;
+  }
+  .btn{
+    margin-top: 15px;
+  }
+    
+  @media (max-width: 768px) {
+  @media (max-width: 768px) {
+   
+    .Scontainer {
+      grid-template-columns: 1fr;
+    }
+
+    .libraries-label,
+    .other-label {
+      top: 10px; 
+    }
+  }}
+  .btn{
+    margin-top: 15px;
+  }
+    </style>
+
+
+</head>
+<body style="background-color:black;">
+
+<!-- home -->
+<section id="home">
+    <div class="hero">
+        <img src="Assets/img/Y(2).png" alt="LOGO" class="logo animate__animated animate__bounce">
+        <div class="container my-6 mt-0" id="home">
+            <div class="row row-cols-1 row-cols-sm-2">
+                <div class="col-sm-6">
+                    <h2 class="d-inline display-3 mb-3  " style="color:#ffffff;
+                    height: 64px;">I am</h2>
+                    <br>
+                    <h1 class="typed-text-output d-inline display-3 mb-3 position-relative" style="color:#ffffff;
+                    height: 64px;"></h1>
+                    <div class="typed-text d-none">Yash Niwane,, Web Developer,, Web Designer,, Open-Source Contributor,, Python Enthusiast,</div>
+                    <br>
+                    <br>
+                    <button class="download-cv display-3 mb-3" style="color:#ffffff;
+                    height: 64px;" role="button" onclick="downloadCV()">Download CV</button>
+                </div>
+                <div class="col-sm-6 home-intro-video">
+                    <video autoplay playsinline loop muted style="pointer-events: none; border-radius: 20px;">
+                        <source src="Assets/video/hero.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="bottomCentered" style="z-index: 2147483647;">
+            <div class="plus" id="plus">
+              <div class="plus__line plus__line--v">
+                <a href="#home" class="plus__link"><i class="ion-ios-home"></i></a>
+                <a href="#project" class="plus__link"><i class="ion-code"></i></a>
+                <a href="#skills" class="plus__link"><i class="ion-settings"></i></a>
+                <a href="#connect" class="plus__link"><i class="ion-person-add"></i></a>
+                
+
+              </div>
+              <div class="plus__line plus__line--h"></div>
+            </div>
+          </div>
+          
+    </div>
+</section>
+
+
+<section id="project">
+    <div class="">
+        <h1 class="section-header">My Projects </h1>
+
+    </div>
+    
+    <div class=" card-container">
+        <div class="card custom-card">
+            <img src="Assets/img/projects/Untitled design.gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">Tuition Classes Web Page</h3>
+            <p class="card-text">I created this webpage for local tuitions as part of my freelancing journey.</p>
+            
+            <div class="btn-group">
+                
+                <a href="https://yashniwane.github.io/classes-webpage/" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/classes-webpage" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- HTML, CSS, JS,</li>
+                    <li>Framework:- RectJs, Tailwind CSS, Fontawsome</li>
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class=" card-container" >
+        <div class="card custom-card" >
+            <img src="Assets/img/projects/Untitled design (1).gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">Rig-Net</h3>
+            <p class="card-text">Rig-talk is linkedin like App for Oil industry they want to create introductory web-page for them, while working at OpenInfotech I created This</p>
+            
+            <div class="btn-group">
+                <a href="https://rig-net.com/" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/rig-net/tree/main" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- HTML, CSS, JS,</li>
+                    <li>Libraries:- Tailwind CSS, Fontawsome</li>
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" card-container" >
+        <div class="card custom-card" >
+            <img src="Assets/img/projects/Untitled design (2).gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">Portfolio</h3>
+            <p class="card-text">Created this totally from scratch To showcase my skills</p>
+            
+            <div class="btn-group">
+                <a href="https://yashniwane.github.io/portfolio/" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/portfolio/tree/main" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- HTML, CSS, JS,</li>
+                    <li>Libraries:- Bootstrap, Ionic, Animate.css</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" card-container" >
+        <div class="card custom-card" >
+            <img src="Assets/img/projects/Untitled design (3).gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">Edu-Chat</h3>
+            <p class="card-text">It is Also created During my working period at openinfotech it uses ChatGpt api at backend, and it helps students to learn coding</p>
+            
+            <div class="btn-group">
+                <a href="#" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/edu/tree/main" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- HTML, SCSS, JS, Typescript</li>
+                    <li>Libraries:- tailwind, Ionic, Fontawsome</li>
+                    <li>FrameWork:- Angular</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" card-container" >
+        <div class="card custom-card" >
+            <img src="Assets/img/projects/Untitled design (4).gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">DeepAuth</h3>
+            <p class="card-text">Create In the period of my internship, it has responsive design and totally create using tailwind</p>
+            
+            <div class="btn-group">
+                <a href="https://github.com/yashNiwane/DeepAuth/tree/main" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/DeepAuth/tree/main" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- HTML, CSS, JS</li>
+                    <li>Libraries:- tailwind, Ionic, Fontawsome</li>
+                    <li>FrameWork:- Angular</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" card-container" >
+        <div class="card custom-card" >
+            <img src="Assets/img/projects/Untitled design (5).gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">YouTube video Downloader</h3>
+            <p class="card-text">A full fledge youtube video downloader with backend also</p>
+            
+            <div class="btn-group">
+                <a href="https://github.com/yashNiwane/youtube-video-downloader" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/youtube-video-downloader" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- Python, HTML, CSS, JS</li>
+                    <li>Libraries:- Bootstrap</li>
+                    <li>FrameWork:- Flask, Pytube</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" card-container" >
+        <div class="card custom-card" >
+            <img src="Assets/img/projects/Untitled design (6).gif" alt="Desktop" class="card-img">
+            <h3 class="card-text">Button Hover Effect</h3>
+            <p class="card-text">Added js to change position of No button whensomeone hover it</p>
+            
+            <div class="btn-group">
+                <a href="https://yashniwane.github.io/Ask-for-a-date/" class="btn btn-light">View Web Page</a>
+                <a href="https://github.com/yashNiwane/Ask-for-a-date" class="btn btn-light">View Source Code</a>
+            </div>
+    
+            <div class="tech-stack">
+                <h5>Technology Stack:</h5>
+                <ul>
+                    <li>languages:- HTML, CSS, JS</li>
+                    <li>Libraries:- Bootstrap</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+     
+
+
+<section id="skills">
+    <h1 class="section-header">Skills</h1>
+    <div class="skills-container">
+      <div class="Scontainer">
+        <div class='Scard' id="cardLanguages">
+          <label class="label languages-label">Languages I Know</label>
+          <!-- Icons for languages will be dynamically added here using JavaScript -->
+        </div>
+        <div class='Scard' id="cardFrameworks">
+          <label class="label frameworks-label">Frameworks I Use</label>
+          <!-- Icons for frameworks will be dynamically added here using JavaScript -->
+        </div>
+        <div class='Scard' id="cardLibraries">
+          <label class="label libraries-label">Libraries I Utilize</label>
+          <!-- Icons for libraries will be dynamically added here using JavaScript -->
+        </div>
+        <div class='Scard' id="cardOther">
+          <label class="label other-label">Other Technologies</label>
+          <!-- Icons for other technologies will be dynamically added here using JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+    
+  <section id="connect" style="height:100vh; width: 100%;">
+
+    <h1 class="section-header">Contact</h1>
+
+    <div class="contact-wrapper">
+
+        
+
+        <form id="contact-form"  class="form-horizontal" action="https://formspree.io/f/meqyeqkk" method="post">
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+        </div>
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                <label for="message">Message:</label>
+                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Type your message here" required></textarea>
+            </div></div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+       
+
+        <div class="direct-contact-container">
+
+            <!-- Your Contact Information -->
+            <ul class="contact-list">
+                <li class="list-item">
+                    <i class="fa fa-map-marker fa-2x"><span class="contact-text place">Pune, Maharashtra</span></i>
+                </li>
+                <li class="list-item">
+                    <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:niwaneyash@gmail.com" title="Send me an email">niwaneyash@gmail.com</a></span></i>
+                </li>
+            </ul>
+
+            <hr>
+
+            <!-- Your Social Media Links -->
+            <ul class="social-media-list">
+                <li><a href="https://github.com/yashNiwane" target="_blank" class="contact-icon">
+                    <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/yash-niwane-95859a24b/" target="_blank" class="contact-icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                
+                </li>
+                <li><a href="https://www.instagram.com/yash__niwane/" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+            <hr>
+
+        </div>
+
+    </div>
+
+</section>
+
+    
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-gpfa7S9b9Fwh7+rkjzjwsK0t4y57tc2Kb4S8lqYb8FBz3dg8Q5aXzm2dAfi9bDR0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6Ri9aK2NRZlFfS9JdQb6egpDQfNsl5+2" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
