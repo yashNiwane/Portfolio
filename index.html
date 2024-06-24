@@ -1,493 +1,797 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yash Niwane - Web Developer, Designer, and Open-Source Contributor. Explore my projects and get in touch.">
-    <meta name="keywords" content="Yash Niwane, Web Developer, Web Designer, Open-Source, Portfolio, Projects">
-    <meta name="author" content="Yash Niwane">
 
+<head>
+    <meta charset="utf-8">
     <title>Yash Niwane</title>
-    <link rel="icon" href="Assets/img/YN-black.png" type="image/gif" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqk1w20JHDn/a4M.." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqk1w20JHDn/a4M.." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-bG/ZmYS3O1T6HbXzRDJBsZ2A+7M+n0bZk4gZOuL4qzKvoVgF+8Z3uc5QwDO+rDAM" crossorigin="anonymous">
-
-    <style>
-      .skills-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        color: white;
-      }
-
-      .Scontainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        max-width: 350px;
-        width: 100%;
-      }
-
-      .Scard {
-        background-color: black;
-        width: 100%;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid;
-        border-color: white;
-        position: relative;
-        border-radius: 20px;
-      }
-
-      .icon {
-        position: absolute;
-        height: 64px;
-        width: 64px;
-        margin: 5px;
-      }
-
-      .label {
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(249, 246, 238);
-      }
-
-      .languages-label,
-      .frameworks-label,
-      .libraries-label,
-      .other-label {
-        position: absolute;
-      }
-
-      .languages-label {
-        top: 10px;
-        left: 10px;
-      }
-
-      .frameworks-label {
-        top: 10px;
-        right: 10px;
-      }
-
-      .libraries-label {
-        top: 10px;
-        left: 10px;
-      }
-
-      .other-label {
-        top: 10px;
-        right: 10px;
-      }
-      .btn{
-        margin-top: 15px;
-      }
-        
-      @media (max-width: 768px) {
-       
-        .Scontainer {
-          grid-template-columns: 1fr;
-        }
-
-        .libraries-label,
-        .other-label {
-          top: 10px; 
-        }
-      }
-      .btn{
-        margin-top: 15px;
-      }
-      .a{
-        color: transparent;
-      }
-      .Scontainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-        gap: 20px;
-      }
-
-      @layer base {
-        ul {
-          list-style-type: circle;
-        }
-
-        ol {
-          list-style-type: decimal;
-        }
-      }
-
-      .popup {
-        display: none; 
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        max-width: 600px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 1000; 
-        transition: transform 0.3s ease-in-out; 
-      }
-
-      .popup.show {
-        display: block; 
-        transform: translate(-50%, -50%) scale(1); 
-      }
-
-      .popup.hide {
-        transform: translate(-50%, -50%) scale(0.9); 
-      }
-
-      .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-      }
-
-      #openPopupBtn {
-        font-size: 2rem;
-      }
-    </style>
 </head>
-<body style="background-color:black;">
-    <section id="home">
-        <div class="hero">
-            <img src="Assets/img/Y(2).png" alt="LOGO" class="logo animate__animated animate__bounce">
-            <div class="container my-6 mt-0" id="home">
-                <div class="row row-cols-1 row-cols-sm-2">
-                    <div class="col-sm-6">
-                      <br><br>
-                        <h2 class="d-inline display-3 mb-3" style="color:#ffffff;
-                            height: 64px;">I am</h2>
-                        <br>
-                        <h1 class="typed-text-output d-inline display-3 mb-3 position-relative" style="color:#ffffff;
-                            height: 64px;"></h1>
-                        <div class="typed-text d-none">Yash Niwane,, Web Developer,, Web Designer,, Open-Source Contributor,, Python Enthusiast,</div>
-                        <br>
-                        <br>
-                        <button class="download-cv display-3 mb-3" style="color:#ffffff;
-                            height: 64px;" role="button" onclick="downloadCV()">Download CV</button>
-                    </div>
-                    <div class="col-sm-6 home-intro-video">
-                        <video autoplay playsinline loop muted style="pointer-events: none; border-radius: 20px;">
-                            <source src="Assets/hero.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Yash</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                
             </div>
-            <div class="bottomCentered" style="z-index: 2147483647;">
-                <div class="plus" id="plus">
-                    <div class="plus__line plus__line--v" style="gap: 15px;">
-                        <a href="#home" class="plus__link" title="home"><i title="home" class="fas fa-home"></i></a>
-                        <a href="#project" class="plus__link"><i class="fa-solid fa-briefcase"></i></a>
-                        <a href="#skills" class="plus__link"><i class="fa-solid fa-list-check"></i></i></a>
-                        <a href="#connect" class="plus__link"><i class="fas fa-user-plus"></i></a>
-                    </div>
-                    <div class="plus__line plus__line--h"></div>
-                </div>
+            <a href="index.html" class="navbar-brand   mx-3 d-none d-lg-block">
+                <img src="img/YN-black.png" alt="Logo" class="img-fluid" height="50" width="50" style="border-radius: 10px;">
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
-    </section>
-    <section id="project">
-        <div class="">
-            <h1 class="section-header">My Projects </h1>
-        </div>
-        <div class=" card-container">
-            <div class="card custom-card">
-                <img src="Assets/img/projects/Untitled design.gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">Tuition Classes Web Page</h3>
-                <p class="card-text">I created this webpage for local tuitions as part of my freelancing journey.</p>
-                <div class="btn-group">
-                    <a href="https://yashniwane.github.io/classes-webpage/" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/classes-webpage" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- HTML, CSS, JS,</li>
-                        <li>Framework:- RectJs, Tailwind CSS, Fontawsome</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" card-container" >
-            <div class="card custom-card" >
-                <img src="Assets/img/projects/Untitled design (1).gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">Rig-Net</h3>
-                <p class="card-text">Rig-talk is linkedin like App for Oil industry they want to create introductory web-page for them, while working at OpenInfotech I created This</p>
-                <div class="btn-group">
-                    <a href="https://rig-net.com/" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/rig-net/tree/main" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- HTML, CSS, JS,</li>
-                        <li>Libraries:- Tailwind CSS, Fontawsome</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" card-container" >
-            <div class="card custom-card" >
-                <img src="Assets/img/projects/Untitled design (2).gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">Portfolio</h3>
-                <p class="card-text">Created this totally from scratch To showcase my skills</p>
-                <div class="btn-group">
-                    <a href="https://yashniwane.github.io/portfolio/" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/portfolio/tree/main" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- HTML, CSS, JS,</li>
-                        <li>Libraries:- Bootstrap, Ionic, Animate.css</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" card-container" >
-            <div class="card custom-card" >
-                <img src="Assets/img/projects/Untitled design (3).gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">Edu-Chat</h3>
-                <p class="card-text">It is Also created During my working period at openinfotech it uses ChatGpt api at backend, and it helps students to learn coding</p>
-                <div class="btn-group">
-                    <a href="#" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/edu/tree/main" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- HTML, SCSS, JS, Typescript</li>
-                        <li>Libraries:- tailwind, Ionic, Fontawsome</li>
-                        <li>FrameWork:- Angular</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" card-container" >
-            <div class="card custom-card" >
-                <img src="Assets/img/projects/Untitled design (4).gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">DeepAuth</h3>
-                <p class="card-text">Create In the period of my internship, it has responsive design and totally create using tailwind</p>
-                <div class="btn-group">
-                    <a href="https://github.com/yashNiwane/DeepAuth/tree/main" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/DeepAuth/tree/main" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- HTML, CSS, JS</li>
-                        <li>Libraries:- tailwind, Ionic, Fontawsome</li>
-                        <li>FrameWork:- Angular</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" card-container" >
-            <div class="card custom-card" >
-                <img src="Assets/img/projects/Untitled design (5).gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">YouTube video Downloader</h3>
-                <p class="card-text">A full fledge youtube video downloader with backend also</p>
-                <div class="btn-group">
-                    <a href="https://github.com/yashNiwane/youtube-video-downloader" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/youtube-video-downloader" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- Python, HTML, CSS, JS</li>
-                        <li>Libraries:- Bootstrap</li>
-                        <li>FrameWork:- Flask, Pytube</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" card-container" >
-            <div class="card custom-card" >
-                <img src="Assets/img/projects/Untitled design (6).gif" alt="Desktop" class="card-img">
-                <h3 class="card-text">Button Hover Effect</h3>
-                <p class="card-text">Added js to change position of No button whensomeone hover it</p>
-                <div class="btn-group">
-                    <a href="https://yashniwane.github.io/Ask-for-a-date/" class="btn btn-light">View Web Page</a>
-                    <a href="https://github.com/yashNiwane/Ask-for-a-date" class="btn btn-light">View Source Code</a>
-                </div>
-                <div class="tech-stack">
-                    <h5>Technology Stack:</h5>
-                    <ul>
-                        <li>languages:- HTML, CSS, JS</li>
-                        <li>Libraries:- Bootstrap</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="skills">
-        <h1 class="section-header">Skills</h1>
-        <div class="skills-container">
-          <div class="Scontainer"> 
-            <div class='Scard' id="cardLanguages">
-              <label class="label languages-label">Languages I Know</label>
-            </div>
-            <div class='Scard' id="cardFrameworks">
-              <label class="label frameworks-label">Frameworks I Use</label>
-            </div>
-            <div class='Scard' id="cardLibraries">
-              <label class="label libraries-label">Libraries I Utilize</label>
-            </div>
-            <div class='Scard' id="cardOther">
-              <label class="label other-label">Other Technologies</label>
-            </div>
-          </div>
-        </div>
-      </section>
-    <section id="connect" style="height:100vh; width: 100%;">
-        <h1 class="section-header">Contact</h1>
-        <div class="contact-wrapper">
-            <form id="contact-form"  class="form-horizontal" action="https://formspree.io/f/meqyeqkk" method="post">
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3">I'm</h3>
+                    <h1 class="display-3 mb-3">Yash Niwane</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a href="Assets/Yash Niwane Resume u1.docx.pdf" class="btn btn-primary py-3 px-4 me-3">Download CV</a>
+                        <a href="https://github.com/yashNiwane" class="btn btn-primary py-3 me-5">My Github</a>
+
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="https://static.vecteezy.com/system/resources/previews/015/952/349/non_2x/web-development-programmer-and-code-testing-in-augmented-reality-illustration-vector.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <label for="message">Message:</label>
-                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Type your message here" required></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="years flex-shrink-0 text-center me-4">
+                            <h1 class="display-1 mb-0">3+</h1>
+                            <h5 class="mb-0">Years</h5>
+                        </div>
+                        <h3 class="lh-base mb-0">of working experience as a full-stack developer & freelancer</h3>
+                    </div>
+                    <p class="mb-4">With a passion for web design and development, I bring creativity and technical expertise to every project. My journey includes a diverse portfolio, ranging from sleek frontend designs to complex AI-driven applications.</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Affordable Prices</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High-Quality Products</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On-Time Project Delivery</p>
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div> -->
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">28</h2>
+                    </div>
+                    <p class="mb-4">From stunning front-end designs to advanced AI-driven solutions, I have successfully delivered a wide range of projects, ensuring quality and satisfaction in every endeavor.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0">Hackathon Attended</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">2</h2>
+                    </div>
+                    <p class="mb-0">Proudly ranked among the top 20 finalists in the prestigious InovateYou hackathon, showcasing innovation and problem-solving skills at the highest level.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About End -->
+
+<!-- Expertise Start -->
+<div class="container-xxl py-6 pb-5" id="skill">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5 mb-5">Skills & Experience</h1>
+                <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p>
+                <h3 class="mb-4">My Skills</h3>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">HTML</h6>
+                                <h6 class="font-weight-bold">100%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">CSS</h6>
+                                <h6 class="font-weight-bold">95%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">JavaScript</h6>
+                                <h6 class="font-weight-bold">95%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Angular</h6>
+                                <h6 class="font-weight-bold">85%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">React</h6>
+                                <h6 class="font-weight-bold">90%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Python</h6>
+                                <h6 class="font-weight-bold">98%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Django</h6>
+                                <h6 class="font-weight-bold">80%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Flask</h6>
+                                <h6 class="font-weight-bold">90%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div class="direct-contact-container">
-                <ul class="contact-list">
-                    <li class="list-item">
-                        <i class="fa fa-map-marker fa-2x"><span class="contact-text place">Pune, Maharashtra</span></i>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                    <li class="nav-item w-50">
+                        <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
                     </li>
-                    <li class="list-item">
-                        <i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:niwaneyash@gmail.com" title="Send me an email">niwaneyash@gmail.com</a></span></i>
+                    <li class="nav-item w-50">
+                        <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
                     </li>
                 </ul>
-                <hr>
-                <ul class="social-media-list">
-                  <a href="https://github.com/yashNiwane" target="_blank" class="contact-icon">
-                    <li>
-                      <i class="fa fa-github" aria-hidden="true"></i>
-                    </li>
-                  </a>
-                  <a href="https://www.linkedin.com/in/yash-niwane-95859a24b/" target="_blank" class="contact-icon">
-                    <li>
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </li>
-                  </a>
-                  <a href="https://www.instagram.com/yash__niwane/" target="_blank" class="contact-icon">
-                    <li>
-                      <i class="fa fa-instagram"></i>
-                    </li>
-                  </a>
-                </ul>
-                <hr>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row gy-5 gx-4">
+                            <div class="col-sm-6">
+                                <h5>UI/UX Developer</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">August 2023 - Present</p>
+                                <h6 class="mb-0">OpenInfotech</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Full Stack Developer (Intern)</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">February 2023 - May 2023</p>
+                                <h6 class="mb-0">LetsGrowMore</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row gy-5 gx-4">
+                            <div class="col-sm-6">
+                                <h5>Undergraduate in Information Technology</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">2022 - 2026</p>
+                                <h6 class="mb-0">Savitribai Phule University, Siddhant College of Engineering</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Higher Secondary Certificate</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">2019 - 2021</p>
+                                <h6 class="mb-0">Sant Gadge Baba Amravati University, Shri Radhakisan Laxminarayan Toshniwal College of Science</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <div class="flex items-center justify-end">
-      <button id="openPopupBtn" class="fixed top-4 right-4 bg-blue-500 p-2 rounded-md text-white" style="background-image: url('Assets/img/icons8-chat-bot-48.png'); background-size: cover; width: 48px; height: 48px; background-repeat: no-repeat;">
-      </button>
-  </div>
-  
+    </div>
+</div>
+<!-- Expertise End -->
+
+ <!-- Service Start -->
+<div class="container-fluid bg-light my-5 py-6" id="service">
+    <div class="container">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-6">
+                <h1 class="display-5 mb-0">My Services</h1>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-primary py-3 px-5" href="mailto:niwaneyash@gmail.com?subject=Hiring%20Inquiry">Hire Me</a>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-code fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Web Development</h4>
+                       
+                        <span>Front-end and back-end web development using HTML, CSS, JavaScript, Angular, React, Django, Flask, and RESTful APIs. Responsive web design and optimization.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">User Experience (UX) Design</h4>
+                        
+                        <span>User interface (UI) design, user experience (UX) research and analysis, wireframing, prototyping, and usability testing.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-mobile-alt fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Application Development</h4>
+                       
+                        <span>Desktop and mobile application development using languages like C++, Python, and JavaScript. Integration of generative AI and natural language processing (NLP) capabilities.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-chalkboard-teacher fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Consulting and Mentoring</h4>
+                        
+                        <span>Providing guidance and mentorship on programming languages, web development, UX design, and application development. Conducting workshops and training sessions.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-cloud fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Cloud Computing and DevOps</h4>
+                       
+                        <span>Deploying and managing applications on cloud platforms (AWS, Google Cloud, Azure). Implementing DevOps practices, automation, and Infrastructure as Code (IaC).</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
+                        <li class="mx-3" data-filter=".second">RAG</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="Assets/EduChat.gif" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="Assets/EduChat.gif" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/yashNiwane/edu"><i class="fa fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="Assets/rigtalk.gif" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="Assets/rigtalk.gif" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/yashNiwane/rig-net"><i class="fa fa-code"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="Assets/Tution Classes.gif" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="Assets/Tution Classes.gif" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/yashNiwane/classes-webpage/"><i class="fa fa-code"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://yashniwane.github.io/classes-webpage/"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="Assets/rag notebook.gif" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="Assets/rag notebook.gif" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="Assets/ExpenseTracker.gif" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="Assets/ExpenseTracker.gif" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+   
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-6 pb-5" id="team">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Team Members</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-left h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="testimonial-right h-100">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Let's Work Together</h1>
+                </div>
+                <!-- <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+                </div> -->
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My Location:</p>
+                    <h3 class="fw-bold">Pune, Maharashtra, India</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold">(91) 9356965876</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Email me:</p>
+                    <h3 class="fw-bold">niwaneyash@gmail.com</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Follow me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/yash-niwane-95859a24b/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://github.com/yashNiwane"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4">Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always excited to discuss new projects and share my expertise in web development, user experience design, and application development.</p>
+                    <form action="https://formspree.io/f/meqyeqkk" method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="yourname">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" name="message"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact End -->
+
+    <!-- chatbot -->
+
+    <div  style="display: flex; align-items: center; justify-content: flex-end; border: none;">
+        <button id="openPopupBtn" style="position: fixed; bottom: 2.4rem; left: 2.4rem; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); background-color: #ffffff; transition: background-color 0.3s ease-in-out; border: none; width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+            <img src="Assets/output-onlinegiftools.gif" alt="Chatbot Icon" class="chat-icon" style="width: 150%; height: 150%; object-fit: cover;">
+        </button>
+        
+        
+    </div>
     <div id="popup" class="popup">
-        <button id="closePopupBtn" class="close-btn bg-red-500 p-1 rounded-md text-white">
+        <button id="closePopupBtn" class="close-btn">
             <i class="fas fa-times"></i>
         </button>
-        <p class="text-xl font-bold text-center text-green-500 mb-4">
+        <p style="font-size: 1.5rem; /* text-2xl is roughly 1.5rem */ font-weight: 700; /* font-bold */ text-align: center; color: #2d3748; margin-bottom: 1rem;">
             Ask Anything About Me
         </p>
-        <div class="overflow-y-auto" style="max-height: 40vh">
-            <div id="messageHolder" class="flex flex-col m-4"></div>
+        <div style="overflow-y: auto; max-height: 40vh; padding: 1rem; background-color: #f0f4f8; border-radius: 0.5rem; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <div id="messageHolder" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
         </div>
-        <div class="flex flex-row m-2">
-          <input type="text" class="flex-1 border rounded-md m-1 border-green-600 p-1 outline-none ring-2 ring-green-600
-              border-transparent" placeholder="Chat..." name="chat" id="chat" style="width: 80%;"/>
-          <button id="btn" class="m-1 bg-blue-500 p-1 rounded-md text-white">
-              Send
-          </button>
-      </div>
-      
-        <script type="importmap">
-            {
-                "imports": {
-                    "@google/generative-ai": "https://esm.run/@google/generative-ai"
-                }
-            }
-        </script>
-        <script type="module" src="js/chatbot.js"></script>
+        <div class="prompt-container" style="margin-top: 1rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+            <button class="prompt-btn" bg-blue-500 style="background-color: #3b82f6; /* bg-blue-500 */
+            color: #ffffff; /* text-white */
+            padding: 0.5rem 1rem; /* p-2 */
+            border-radius: 0.375rem; /* rounded-md */
+            margin: 0.25rem; /* m-1 */
+            transition: background-color 0.3s ease; border: none; /* hover:bg-blue-600 transition duration-300 */"
+     onmouseover="this.style.backgroundColor='#2563eb'"
+     onmouseout="this.style.backgroundColor='#3b82f6'" id="one">Give me his contact details</button>
+            <button class="prompt-btn" bg-blue-500 style="background-color: #3b82f6; /* bg-blue-500 */
+            color: #ffffff; /* text-white */
+            padding: 0.5rem 1rem; /* p-2 */
+            border-radius: 0.375rem; /* rounded-md */
+            margin: 0.25rem; /* m-1 */
+            transition: background-color 0.3s ease; border: none;/* hover:bg-blue-600 transition duration-300 */"
+     onmouseover="this.style.backgroundColor='#2563eb'"
+     onmouseout="this.style.backgroundColor='#3b82f6'" id="two">How many years of experience does Yash have?</button>
+            <button class="prompt-btn" bg-blue-500 style="background-color: #3b82f6; /* bg-blue-500 */
+            color: #ffffff; /* text-white */
+            padding: 0.5rem 1rem; /* p-2 */
+            border-radius: 0.375rem; /* rounded-md */
+            margin: 0.25rem; /* m-1 */
+            transition: background-color 0.3s ease; border: none;/* hover:bg-blue-600 transition duration-300 */"
+     onmouseover="this.style.backgroundColor='#2563eb'"
+     onmouseout="this.style.backgroundColor='#3b82f6'" id="three">What projects has Yash worked on?</button>
+        </div>
+        <div style="display: flex; flex-direction: row; margin-top: 1rem;">
+            <input type="text" style="flex: 1; /* flex-1 */
+            border: 1px solid #e2e8f0; /* border */
+            border-radius: 0.375rem; /* rounded-md */
+            padding: 0.5rem; /* p-2 */
+            outline: none; /* outline-none */
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* ring-2 ring-blue-500 */
+            border-color: transparent; /* border-transparent */" placeholder="Chat..." name="chat" id="chat"/>
+            <button id="btn" style="margin-left: 0.5rem; /* ml-2 */
+            background-color: #3b82f6; /* bg-blue-500 */
+            padding: 0.5rem 1rem; /* p-2 */
+            border:none;
+            border-radius: 0.375rem; /* rounded-md */
+            color: #ffffff; /* text-white */
+            transition: background-color 0.3s ease; /* hover:bg-blue-600 transition duration-300 */"
+     onmouseover="this.style.backgroundColor='#2563eb'"
+     onmouseout="this.style.backgroundColor='#3b82f6'">
+                Send
+            </button>
+        </div>
     </div>
-    <script>
-        const openPopupBtn = document.getElementById('openPopupBtn');
-        const closePopupBtn = document.getElementById('closePopupBtn');
-        const popup = document.getElementById('popup');
-        let popupOpen = false;
-        openPopupBtn.addEventListener('click', () => {
-            if (!popupOpen) {
-                popup.classList.add('show');
-                popupOpen = true;
-            } else {
-                popup.classList.add('hide');
-                setTimeout(() => {
-                    popup.classList.remove('show', 'hide'); 
-                    popupOpen = false;
-                }, 300);
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
             }
-        });
-        closePopupBtn.addEventListener('click', () => {
+        }
+    </script>
+
+
+ <!-- Copyright Start -->
+<div class="container-fluid bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                           </div>
+            <div class="col-md-6 text-center text-md-end">
+                Website designed and developed by Yash Niwane.
+                <br>Connect with me on <a class="border-bottom text-secondary" href="https://www.linkedin.com/in/yash-niwane-95859a24b/">LinkedIn</a> or <a class="border-bottom text-secondary" href="https://github.com/yashNiwane">GitHub</a>.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script type="module" src="js/chat.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+    const popup = document.getElementById('popup');
+    const sendBtn = document.getElementById('btn');
+    const chatInput = document.getElementById('chat');
+    let popupOpen = false;
+
+    openPopupBtn.addEventListener('click', () => {
+        if (!popupOpen) {
+            popup.classList.add('show');
+            popupOpen = true;
+        } else {
             popup.classList.add('hide');
             setTimeout(() => {
                 popup.classList.remove('show', 'hide'); 
                 popupOpen = false;
-            }, 300); 
-        });
+            }, 300);
+        }
+    });
+
+    closePopupBtn.addEventListener('click', () => {
+        popup.classList.add('hide');
+        setTimeout(() => {
+            popup.classList.remove('show', 'hide'); 
+            popupOpen = false;
+        }, 300); 
+    });
+
+    let preinput1 = document.getElementById('one');
+    let preinput2 = document.getElementById('two');
+    let preinput3 = document.getElementById('three');
+    let preinput = document.getElementById('chat');
+
+    preinput1.addEventListener('click', () => {
+        preinput.value = "Give me his contact details";
+    });
+    preinput2.addEventListener('click', () => {
+        preinput.value = "How many years of experience does Yash have?";
+    });
+    preinput3.addEventListener('click', () => {
+        preinput.value = "What projects has Yash worked on?";
+    });
+
+});
+
     </script>
-   
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-gpfa7S9b9Fwh7+rkjzjwsK0t4y57tc2Kb4S8lqYb8FBz3dg8Q5aXzm2dAfi9bDR0" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6Ri9aK2NRZlFfS9JdQb6egpDQfNsl5+2" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
 </body>
+
 </html>
