@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const conv = new showdown.Converter();
 
-const genAI = new GoogleGenerativeAI("AIzaSyDcBCDL7WoBKjBWWm7lzsRHbrAKePuRAEE");
+const genAI = new GoogleGenerativeAI("AIzaSyAfUfWBMgkEU76knHTqN1qCesfawNwTZ9E");
 const gen_model = genAI.getGenerativeModel({ model: "gemini-pro" });
 let firstMessageSent = false; // Flag to track if the first message has been sent
 
